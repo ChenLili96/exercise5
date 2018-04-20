@@ -3,6 +3,11 @@ var destinationType; //used sets what should be returned (image date OR file pat
 
 document.addEventListener("deviceready",onDeviceReady,false);
 
+function submitText() {
+	var text = $('#textinput').val();
+	alert(text);
+} 
+
 function onDeviceReady() {
 	destinationType=navigator.camera.DestinationType;
 }
